@@ -24,7 +24,3 @@ jobs:
       run: docker build . --file docker-file-ubuntu -t docker.pkg.github.com/${{ github.repository }}/ubuntu-xsar:latest
     - name: Push the Ubuntu Docker image
       run: docker push docker.pkg.github.com/${{ github.repository }}/ubuntu-xsar:latest
-    - name: Build the MacOS Docker image
-      run: docker build . --file docker-file-macos -t docker.pkg.github.com/${{ github.repository }}/macos-xsar:latest
-    - name: Push the MacOS Docker image
-      run: docker push docker.pkg.github.com/${{ github.repository }}/macos-xsar:latest
